@@ -1,0 +1,118 @@
+#hero{
+    background-image: url("../img/hero4.png");
+    background-size: cover;
+    background-position:top 25% right 0%;
+    height: 90vh;
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    h4{
+        padding-bottom: 15px;
+    }
+    h1{
+        color: #088178;
+    }
+    button{
+        border: 0;
+        background-image: url("../img/button.png");
+        background-color: transparent;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #088178;
+        padding: 14px 80px 14px 65px;
+        a{
+            text-decoration: none;
+            color: #088178;
+        }
+        font: {
+            size:15px;
+            weight: 700;
+        }
+        cursor: pointer;
+    }
+    form{
+        width: 30%;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        h3{
+            color: #088178;
+            margin-bottom: 10px;
+            position: relative;
+            width: fit-content;
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 50%;
+                height: 3px;
+                background-color: #088178;
+            }
+        }
+        #container{
+            width: 100%;
+            height: 250px;
+            padding: 10px;
+            border-radius: 4px;
+            border: 2px dashed #e1e1e1;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            img{
+                display: none;
+                &.active{
+                    width: 100%;
+                    height: 100%;
+                    display:block;
+                }
+            }
+            p{
+                &.active{
+                    display: none;
+                }
+            }
+            i{
+                font: {
+                    size: 30px;
+                    weight : 700;
+                }
+                color: #088178;
+                &.active{
+                    display: none;
+                }
+            }
+            button{
+                border: 0;
+                background-image: none;
+                color: #fff;
+                padding: 12px 30px;
+                background-color: #088178;
+                border-radius: 4px;
+                input{
+                    display: none;
+                }
+                &.active{
+                    display: none;
+                }
+            }
+        }
+        input{
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #e1e1e1;
+            caret-color: #088178;
+            outline: none;
+            margin-bottom: 15px;
+        }
+    }
+    
+}

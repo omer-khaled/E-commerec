@@ -1,0 +1,85 @@
+#loading{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #e3e6f3;
+    z-index: 900000;
+    div{
+        z-index: 9000000;
+        width: 250px;
+        height: 250px;
+        background-color: transparent;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -125px;
+        border-radius: 50%;
+        border-bottom: 8px solid #088178;
+        transform: rotateX(35deg) rotateY(45deg) rotateZ(0deg);
+        animation: rotateed1 1s linear infinite;
+        &.two{
+            border-top: 8px solid #e7ceb4;
+            border-bottom: none;
+            transform:rotateX(35deg) rotateY(54deg) rotateZ(0deg);
+            animation: rotateed2 1s linear infinite;
+        }
+        &.three{
+            border-top: 8px solid #b195d2;
+            border-bottom: 8px solid #000000;
+            transform:rotateX(35deg) rotateY(-54deg) rotateZ(0deg);
+            animation: rotateed3 1s linear infinite;
+        }
+    }
+    h3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #088178;
+        text-shadow: 0 0 20px #088178 , 
+        0 0 40px #088178,
+        0 0 60px #088178,
+        0 0 80px #088178;
+        animation: text 0.6s linear  infinite ;
+    }
+    &.dis{
+        display: none;
+    }
+}
+@keyframes rotateed1 {
+    0%{
+        transform: rotateX(35deg) rotateY(45deg) rotateZ(0deg);
+    }   
+    100%{
+        transform: rotateX(35deg) rotateY(45deg) rotateZ(360deg);
+    }
+}
+@keyframes rotateed2{
+    0%{
+        transform:rotateX(35deg) rotateY(54deg) rotateZ(0deg);
+    }
+    100%{
+        transform:rotateX(35deg) rotateY(54deg) rotateZ(360deg);
+    }
+}
+@keyframes rotateed3 {
+    0%{
+        transform: rotateX(35deg) rotateY(-54deg) rotateZ(0deg);
+    }   
+    100%{
+        transform: rotateX(35deg) rotateY(-54deg) rotateZ(360deg);
+    }
+}
+@keyframes text {
+    0%{
+        text-shadow: 0 0 20px #088178 , 
+        0 0 40px #088178,
+        0 0 60px #088178,
+        0 0 80px #088178;
+    }   
+    100%{
+        text-shadow: 0 0 20px transparent ;
+    }
+}

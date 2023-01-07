@@ -1,0 +1,166 @@
+#product1{
+    text-align: center;
+    .pro-container{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        flex-wrap: wrap;
+        .pro{
+            width: 23%;
+            min-width: 250px;
+            padding: 10px 12px;
+            border: 1px solid #cce7d0;
+            cursor: pointer;
+            box-shadow: 20px 20px 30px 0px rgba(0 0 0 / 2%);
+            transition: 0.2s ease;
+            margin: 15px 0px;
+            position: relative;
+            border-radius: 20px;
+            &:hover{
+                box-shadow: 20px 20px 30px 0px rgba(0 0 0 / 6%);
+            }
+            img{
+                width: 100%;
+                border-radius: 20px;
+            }
+            .des{
+                text-align: start;
+                padding: 10px 0;
+                span{
+                    color: #606063;
+                    font-size: 12px;
+                }
+                h5{
+                    padding-top: 7px;
+                    color: #1a1a1a;
+                    font-size: 14px;
+                }
+                i{
+                    font-size: 12px;
+                    color: rgba(243 , 181 , 25);
+                }
+                h4{
+                    padding-top: 7px;
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: #088178;
+                }
+            }
+            .cart{
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 50px;
+                background-color: #e8f6ea;
+                font-weight: 500;
+                color: #088178;
+                border: 1px solid #cce7d0;
+                position: absolute;
+                bottom: 20px;
+                right: 10px;
+            }
+        }
+    }
+}
+#pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    button{
+        background-color: #088178;
+        padding: 15px 20px;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: 600;
+        margin: 3px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        background-color: #088178;
+        padding: 15px 20px;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: 600;
+        margin: 3px;
+        i{
+            font: {
+                size: 16px;
+                weight: 600;
+            }
+        }
+    }
+}
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+    .single-pro-image{
+        width: 40%;
+        margin-right: 50px;
+        #MainImg{
+            width: 100%;
+        }
+        .small-img-group{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .small-img-col{
+                flex-basis: 24%;
+                cursor: pointer;
+                .small-img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .single-pro-details{
+        width: 50%;
+        padding-top: 20px;
+        h4{
+            padding: 40px 0 20px 0;
+        }
+        h2{
+            font-size: 26px;
+        }
+        select{
+            display: block;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+        }
+        input{
+            width: 50px;
+            height: 47px;
+            padding-left:10px;
+            font-size: 16px;
+            margin-right: 10px;
+            &:focus{
+                outline: none;
+            }
+        }
+        button{
+            &.normal{
+                background-color: #088178;
+                color: #fff;
+                font: {
+                    size: 14px;
+                    weight:600;
+                };
+                padding: 15px 30px;
+                border-radius: 4px;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                transition: 0.2s;
+            }
+        }
+        span{
+            line-height: 25px;
+        }
+    }
+}

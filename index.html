@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />  
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Omer E-commerec</title>
+</head>
+<body style="overflow: hidden;">
+    <div id="loading">
+        <h3>
+            loading
+        </h3>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+    <section id="header">
+        <a href="#"><img src="./img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="index-navbar">
+                <li><button id="Login-Button">login</button></li>
+            </ul>
+        </div>
+    </section>
+    <section id="hero" class="index">
+        <form action="">
+            <h3>SigUp</h3>
+            <div id="container">
+                <img src="" alt="">
+                <i class="fas fa-cloud-upload"></i>
+                <p>Drag and Drop to Upload file</p>
+                <button id="BrowseButton">
+                    Browse
+                    <input type="file" name="" id="BrowseButtonFile">
+                </button>
+                <!-- <input type="file" value="Browse File" name="file"> -->
+            </div>
+            <input type="email" placeholder="Enter Your Email" name="email">
+            <input type="text" placeholder="Enter Your Name" name="name">
+            <input type="password" placeholder="Enter Your Pass" name="pass">
+            <button>SigUp</button>
+        </form>
+    </section>
+    <div id="login">
+        <i class="fas fa-arrow-alt-square-right"></i>
+        <form action="">
+            <h3>Login</h3>
+            <input type="text" placeholder="Enter Your Name" name="namelogin">
+            <input type="password" placeholder="Enter Your Pass" name="passlogin">
+            <button id="Form-two-button">Login</button>
+            <p></p>
+        </form>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // loading 
+        window.addEventListener('load' , ()=>{
+            setTimeout(()=>{
+                    document.getElementById('loading').classList.add('dis');
+            },700)
+        });
+    </script>
+    <script src="./script_index.js"></script>
+</body>
+</html>

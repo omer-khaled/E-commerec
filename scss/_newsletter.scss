@@ -1,0 +1,64 @@
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("../img/banner/b14.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top 20% left 30%;
+    background-color: #041e42;
+    .newstext{
+        h4{
+            font: {
+                size: 22px;
+                weight : 700;
+            }
+            color: #fff;
+        }
+        p{
+            font: {
+                size: 14px;
+                weight : 600;
+            }
+            color: #818ea0;
+            span{
+                color: #ffbd27;
+            }
+        }
+    }   
+    .form{
+        display: flex;
+        width: 40%;
+        input{
+            height: 3.125rem;
+            padding: 0 1.25em;
+            font-size: 14px;
+            width: 100%;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            outline: none;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        button{
+            &.normal{
+                font: {
+                    size: 14px;
+                    weight:600;
+                };
+                padding: 15px 30px;
+                border-radius: 4px;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                transition: 0.2s;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+            background-color: #088178;
+            color: #fff;
+            white-space: nowrap;
+        }
+    }
+}
